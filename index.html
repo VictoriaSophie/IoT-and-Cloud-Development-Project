@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link rel="icon" href="img/weather-icon.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row d-flex justify-content-center text-black">
+        <div class="col-md-8">
 
-<body>
-    Hello World
-</body>
+          <div id="bg" class="card bg-image shadow-4-strong" style="background-image: url('')" >
+            <!-- Main current data -->
+            <div class="card-header text-center">
+              <p class="h2">Dundee</p>
+              <p id="wrapper-name"></p>
+              <p class="display-1" id="wrapper-temp"></p>
+              <span>Description: <span id="wrapper-description"></span></span>
+              <span><br><br>Pressure: <span id="wrapper-pressure"></span></span>
+              <span class="mx-2">|</span>
+              <span>Humidity: <span id="wrapper-humidity"></span></span>
+            </div>
+            <!-- Daily forecast  -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-3 text-center">
+                  <strong id="date-tomorrow"></strong>
+                  <br>
+                  <img id="icon-tomorrow" src="" alt="">
+                  <br> 
+                  <strong id="temp-tomorrow"></strong>
+
+                </div>
+                <div class="col-3 text-center">
+                  <strong id="date-2"></strong>
+                  <br>
+                  <img id="icon-2" src="" alt="">
+                  <br>
+                  <strong id="temp-2"></strong>
+                </div>
+
+                <div class="col-3 text-center">
+                  <strong id="date-3"></strong>
+                  <br>
+                  <img id="icon-3" src="" alt="">
+                  <br>
+                  <strong id="temp-3"></strong>
+                </div>
+
+                <div class="col-3 text-center">
+                  <strong id="date-4"></strong>
+                  <br>
+                  <img id="icon-4" src="" alt="">
+                  <br>
+                  <strong id="temp-4"></strong>
+                  
+                </div>
+              </div>
+            </div>         
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/weatherapi.js"></script>
+    
+  </body>
 </html>
