@@ -92,6 +92,6 @@ fetch(file)
     }   
   
   
-  console.log(data.list[0]);
+  console.log(data.list[0].main.temp);
 
 });
